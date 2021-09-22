@@ -96,4 +96,21 @@ function displayQuestion(question) {
         answerChoices.appendChild(button);
         button.addEventListener("click", displayNextQuestion);
     });
-}
+};
+
+function displayNextQuestion(event) {
+    currentIndex++;
+    if (currentIndex < questions.length) {
+        popup(event.target.innerText == nextQuestions.correctAnswer)
+        answerChoices.innerHTML = "";
+        if (currentIndex < questions.length) {
+            nextQuestions = questions[currentIndex];
+            displayQuestion(nextQuestions);
+        } else {
+            currentIndex = 0;
+            displayQuestion(nextQuestions);
+        }
+    } else {
+        endGame();
+    };
+};
