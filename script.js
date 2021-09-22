@@ -63,3 +63,16 @@ function startQuiz() {
     displayQuestion(nextQuestions)
     gametime()
 };
+
+submitScoreBtn.addEventListener("click", function () {
+    let name = inputScore.value;
+    scorePage(name, counter);
+});
+
+function gametime() {
+    let timeinterval = setInterval(function () {
+        timer.innerText = counter;
+        counter--;
+    }, 1000);
+};
+
