@@ -124,3 +124,13 @@ function popup(popupResponse){
         timer.innerHTML = counter;
     };
 };
+
+setTimeout(function () {
+  alert.innerText = "";
+}, 1000);
+
+function endGame() {
+  userScore.innerText = counter;
+  timeCounter.classList.add("TimerDisplayNone");
+  quizQuestions.classList.add("questionsCollctn");
+};
