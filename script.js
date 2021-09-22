@@ -114,3 +114,13 @@ function displayNextQuestion(event) {
         endGame();
     };
 };
+
+function popup(popupResponse){
+    if(popupResponse){
+        alert.innerText = "Correct";
+    } else {
+        alert.innerText = "Wrong";
+        counter -= 15;
+        timer.innerHTML = counter;
+    };
+};
