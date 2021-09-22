@@ -84,7 +84,7 @@ function scorePage(alpha1, num1) {
     allScores.push(userData);
 
     localStorage.setItem("userData", JSON.stringify(allScores));
-    location.href = "score1-1.html";
+    location.href = "score.html";
 };
 
 function displayQuestion(question) {
