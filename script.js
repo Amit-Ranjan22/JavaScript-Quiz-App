@@ -17,3 +17,31 @@ let allScores = [];
 let storedScores = JSON.parse(localStorage.getItem("userData"));
 let hideMe = document.getElementById("HIDE");
 let inputScore = document.getElementById("inputScore");
+
+let questions = [
+    {
+        questn: "Commonly used data type Do Not include:---",
+        options: ["strings", "booleance", "alerts", "numbers"],
+        correctAnswer: "alerts"
+    },
+    {
+        questn: "The condition in an if/else statement is enclosed within:---",
+        options: ["quotes", "Curly brackets", "parentheses", "square brackets"],
+        correctAnswer: "parentheses"
+    },
+    {
+        questn: "Arrays in JavaScript can be used to store:---",
+        options: ["numbers and strings", "others Arrays", "booleances", "all of the above"],
+        correctAnswer: "all of the above"
+    },
+    {
+        questn: "String values must be enclosed within --- when being assigned to variables ",
+        options: ["commas", "curly brackets", "quotes", "parentheses"],
+        correctAnswer: "quotes"
+    },
+    {
+        questn: "A very useful tool used during development and debugging for printing content to the debugger is:---",
+        options: ["JavaScript", "terminal/bash", "alerts", "console.log"],
+        correctAnswer: "console.log"
+    },
+]
