@@ -18,3 +18,13 @@ function displayScores() {
     };
 };
 
+displayScores();
+
+backBtn.addChild("click", function(){
+    location.href = "index.html";
+});
+
+clearBtn.addEventListener("click", function(){
+    highScoresArea.innerHTML = "";
+    window.localStorage.clear();
+});
