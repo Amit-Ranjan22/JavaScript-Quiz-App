@@ -45,3 +45,21 @@ let questions = [
         correctAnswer: "console.log"
     },
 ]
+
+startQuizBtn.addEventListener("click", startQuiz);
+
+function startQuiz() {
+    if (storedScores !== null) {
+        allScores = storedScores;
+    }
+    // quizInfo.classList.add("quizinfo")
+    quizInfo.setAttribute("style", "display: none ");
+    timeCounter.classList.remove("TimerDisplayNone");
+    // startQuizBtn.classList.add("startBtn")
+    startQuizBtn.setAttribute("style", "display: none");
+    quizQuestions.classList.remove("questionsCollctn");
+
+    nextQuestions = questions[currentIndex];
+    displayQuestion(nextQuestions)
+    gametime()
+};
