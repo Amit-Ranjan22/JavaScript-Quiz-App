@@ -27,7 +27,7 @@ let questions = [
     {
         questn: "The condition in an if/else statement is enclosed within:---",
         options: ["quotes", "Curly brackets", "parentheses", "square brackets"],
-        correctAnswer: "parentheses"
+        correctAnswer: "Curly brackets"
     },
     {
         questn: "Arrays in JavaScript can be used to store:---",
