@@ -76,3 +76,24 @@ function gametime() {
     }, 1000);
 };
 
+function scorePage(alpha1, num1) {
+    let userData = {
+        initial: alpha1,
+        userScore: num1
+    };
+    allScores.push(userData);
+
+    localStorage.setItem("userData", JSON.stringify(allScores));
+    location.href = "score1-1.html";
+};
+
+function displayQuestion(question) {
+    questionCollection.innerText = question.questn;
+    question.options.forEach(function (element) {
+        let button = document.createElement("button");
+        button.setAttribute("style", "background-color: orange");
+        button.innerText = element;
+        answerChoices.appendChild(button);
+        button.addEventListener("click", displayNextQuestion);
+    });
+}
