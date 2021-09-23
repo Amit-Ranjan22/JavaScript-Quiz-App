@@ -2,7 +2,7 @@
 
 **User Story**
 
-AS A coding boot camp student 
+AS a coding boot camp student 
 ------
 I WANT :  to take a timed quiz on JavaScript fundamentals that stores high scores
 ------
@@ -14,7 +14,7 @@ To create two html file, two javaScript file and one style sheet so that it sati
 
 **Acceptance Criteria**
 
-**(1)*When I click the start button, thena timer starts and I am presented with a question.**
+**(1)*When I click the start button, then a timer starts and I am presented with a question.**
 ------
 It's considered done<br>
 ------
@@ -43,7 +43,7 @@ WHEN : a function si written to display the rest of the questions along with
        their options for answer.<br>
 
 
-**(1)*When I answer a question incorrectly then time is subtracted from the clock**
+**(2)*When I answer a question incorrectly then time is subtracted from the clock**
 ------
 It's considered done<br>
 ------
@@ -52,14 +52,14 @@ WHEN : inside this function, if-else statement is used to show wether the
 WHEN : inside this if-else statement, the timer is decreased by a certain 
        amount for wrong answer.<br>
 
-**(1)*When all questions are answered or the timer reaches 0 then the game is over**
+**(3)*When all questions are answered or the timer reaches 0 then the game is over**
 ------
 It's considered done<br>
 ------
 WHEN : endgame() function is written and used inside the startQuiz() 
        function.<br>
 
-**(1)*When the game is over then I can save my initials and my score**
+**(4)*When the game is over then I can save my initials and my score**
 ------
 It's considered done<br>
 ------
@@ -76,7 +76,7 @@ WHEN : a function is written to display score.<br>
 ------
 Deployed application should look like the below given image.<br>
 ------
-<img src = "./app-screenshot.png" alt = "JavaScript-quiz-app_screenshot">
+<img src = "./app-screenshot/JavaScript-Quiz-App-Screenshot.png" alt = "JavaScript-quiz-app_screenshot">
 
 *GitHub URL to the repository*
 ------
