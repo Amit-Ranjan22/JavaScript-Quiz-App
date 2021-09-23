@@ -1,8 +1,9 @@
 main {
     background-color: #b392ac;
     text-align: center;
-    height: 250px;
-    margin-left: 70px;
+    height: 350px;
+    width: 900px;
+    margin-left: 150px;
     margin-right: 70px;
     position: relative;
 }
@@ -41,5 +42,22 @@ hr {
 }
 
 #startQuiz-btn {
+    font-size: 20px;
+    background-color: coral;
+    margin-top: 40px;
+}
+
+#highScoresDiv {
+    background-color: #b392ac;
+    text-align: center;
+    height: 350px;
+    width: 900px;
+    margin-left: 150px;
+    margin-right: 70px;
+    position: relative;
+}
+
+#backButton, #clearScores {
+    background-color: darkgoldenrod;
     font-size: 20px;
 }

@@ -21,34 +21,34 @@ let inputScore = document.getElementById("inputScore");
 
 let questions = [
   {
-    questn: "Commonly used data type Do Not include:---",
-    options: ["strings", "booleance", "alerts", "numbers"],
+    questn: "Commonly used data type Do Not include: ____",
+    options: ["strings", "boolean", "alerts", "numbers"],
     correctAnswer: "alerts",
   },
   {
-    questn: "The condition in an if/else statement is enclosed within:---",
+    questn: "The condition in an if/else statement is enclosed within: ____",
     options: ["quotes", "Curly brackets", "parentheses", "square brackets"],
     correctAnswer: "Curly brackets",
   },
   {
-    questn: "Arrays in JavaScript can be used to store:---",
+    questn: "Arrays in JavaScript can be used to store: ____",
     options: [
       "numbers and strings",
-      "others Arrays",
-      "booleances",
+      "other Arrays",
+      "booleans",
       "all of the above",
     ],
     correctAnswer: "all of the above",
   },
   {
     questn:
-      "String values must be enclosed within --- when being assigned to variables ",
+      "String values must be enclosed within ____ when being assigned to variables ",
     options: ["commas", "curly brackets", "quotes", "parentheses"],
     correctAnswer: "quotes",
   },
   {
     questn:
-      "A very useful tool used during development and debugging for printing content to the debugger is:---",
+      "A very useful tool used during development and debugging for printing content to the debugger is: ____",
     options: ["JavaScript", "terminal/bash", "alerts", "console.log"],
     correctAnswer: "console.log",
   },
@@ -106,7 +106,7 @@ function displayQuestion(question) {
   questionCollection.innerText = question.questn;
   question.options.forEach(function (element) {
     let button = document.createElement("button");
-    button.setAttribute("style", "display: block; margin-left: 50%; background-color: orange");
+    button.setAttribute("style", "display: block; margin-left: 50%; background-color: darkgoldenrod; font-size: 20px; margin-bottom: 2px");
     button.innerText = element;
     answerChoices.appendChild(button);
     button.addEventListener("click", displayNextQuestion);

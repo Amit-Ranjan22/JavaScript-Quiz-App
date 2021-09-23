@@ -7,6 +7,7 @@ function displayScores() {
     if(storedScores !== null) {
         let scoreList = document.createElement("ol");
         scoreList.className = "scoreListClass";
+        scoreList.setAttribute("style","display: block");
         for (let i = 0; i < storedScores.length; i++){
             let initials = storedScores[i].initial;
             let scores = storedScores[i].userScore;
