@@ -20,7 +20,7 @@ function displayScores() {
 
 displayScores();
 
-backBtn.addChild("click", function(){
+backBtn.addEventListener("click", function(){
     location.href = "index.html";
 });
 
